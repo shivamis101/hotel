@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antras Hotel</title>
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!--css-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--google fonts-->
+
+    <!--cursive-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap" rel="stylesheet">
+    <!--serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <!--sans-serif-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
+    <!--font awesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"></script>
+
+</head>
+
+<body>
+
+    <section id="upper-section">
+        <!--hotel heading-->
+        <div class="hotel-heading">
+            <h2 class="antras">Antras</h2>
+            <p class="hotel-text">HOTEL</p>
+        </div>
+
+        <!--navbar-->
+
+
+        <div class="navigation-section">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <li class="nav-item top-item">
+                            <a class="nav-link" href="#home">HOME</a>
+                        </li>
+                        <li class="nav-item top-item">
+                            <a class="nav-link" href="#accomodations-section">RESERVATION</a>
+                        </li>
+                        <li class="nav-item top-item">
+                            <a class="nav-link" href="#rooms-section">ACCOMODATIONS</a>
+                        </li>
+                        <li class="nav-item top-item">
+                            <a class="nav-link" href="#facilities">FACILITIES</a>
+                        </li>
+                        <li class="nav-item top-item">
+                            <a class="nav-link" href="#gallery">GALLERY</a>
+                        </li>
+                        <li class="nav-item top-item">
+                            <a class="nav-link" href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="main-page">
+            <img class="hotel-profile" src="main-img/hotel-profile.jpg">
+        </div>
+
+        <div class="heading-text">
+            <h1 class="big-heading">EXPERIENCE LUXURY ROOMS AND PLACES</h1>
+            <P class="small-heading">AT JUST THE RIGHT PRICE</P>
+        </div>
+        <div class="booknow-button"><button type="button" class="btn btn-outline-light btn-rounded big-button">BOOK
+                NOW</button>
+        </div>
+
+
+        <!--accomodations-->
+        <div class="accomodations-section">
+            <navbar class="navbar navbar-expand-lg navbar-light">
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Togglenavigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
+                    <ul class="navbar-nav ml-auto mr-auto">
+                        <div class="row">
+                            <div class="col-lg-3">
+                                <li class="nav-item">
+                                    <label class="acc-text" for="input">Arrival</label>
+                                    <input type="date" id="arrival-date" name="arrival-date">
+                                </li>
+                            </div>
+                            <div class="col-lg-3">
+                                <li class="nav-item">
+                                    <label class="acc-text" for="input">Departure</label>
+                                    <input type="date" id="arrival-date" name="arrival-date">
+                                </li>
+                            </div>
+                            <div class="col-lg-3">
+                                <li class="nav-item">
+                                    <label class="acc-text" for="input">No. of Person</label>
+                                    <input type="number" id="no-of-adults" name="no-of-adults">
+                                </li>
+                            </div>
+                            <div class="col-lg-3">
+                                <li class="nav-item">
+                                    <button class="btn btn-md btn-outline-light reservation-button">RESERVATION</button>
+                                </li>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </navbar>
+        </div>
+
+
+
+        <!--rooms-->
+        <section id="rooms-section">
+            <img class="left-border" src="designs-img/left-border.png">
+            <div class="rooms-heading-section">
+                <h2 class="rooms-heading">OUR ROOMS</h2>
+                <p class="rooms-para">we have every type of room you need</p>
+                <img class="floral-image" src="designs-img/floral.png">
+            </div>
+
+            <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active container-fluid">
+
+                        <div class="row rooms-row">
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="single-room-image" src="room-img/room1.jpg">
+                                <p class="room-heading">Single Room</p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+                            </div>
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="double-room-image" src="room-img/room2.jpg">
+                                <p class="room-heading">Double room</p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+
+                            </div>
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="family-room-image" src="room-img/room3.jpg">
+                                <p class="room-heading">Family room</p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+
+                            </div>
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="twim-room-image" src="room-img/twin-room.jpg">
+                                <p class="room-heading">Twin Room</p>
+                                <button class="btn btn-sm btn-outline-dark ">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item container-fluid">
+
+                        <div class="row rooms-row">
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="single-room-image" src="room-img/king-room.jpg">
+                                <p class="room-heading">King Room</p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+                            </div>
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="single-room-image" src="room-img/suite.jpg">
+                                <p class="room-heading">Suite room</p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+                            </div>
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="single-room-image" src="room-img/presidential-suite.jpg">
+                                <p class="room-heading">The Presidential suite </p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+                            </div>
+                            <div class="col-lg-3 room-card">
+                                <img class="room-image" alt="private-pool-room-image" src="room-img/room4.jpg">
+                                <p class="room-heading">Private pool Room</p>
+                                <button class="btn btn-sm btn-outline-dark">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+
+                <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+
+
+            </div>
+            <img class="right-border" src="designs-img/right-border.png">
+        </section>
+
+        <!--faciities-->
+
+        <section id="facilities">
+            <div class="facilities-head">
+                <h2 class="fact-heading">Facilities</h2>
+                <hr class="line1">
+            </div>
+
+            <div class="row facilities-cards">
+                <div class="col-lg-4 col-md-6 col-sm-12 facilities-column">
+                    <div class="card fact-card">
+                        <div class="card-footer">
+                            <img class="swimming-image" src="facility-img/swimming-pool.png">
+                            <p class="facilities-text">Swimming pool for Free</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 facilities-column">
+                    <div class="card fact-card">
+                        <div class="card-footer">
+                            <img class="gym-image" src="facility-img/gym.png">
+                            <p class="facilities-text">Fitness gym with a fitness Coach</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 facilities-column">
+                    <div class="card fact-card">
+                        <div class="card-footer">
+                            <img class="internet-image" src="facility-img/internet.png">
+                            <p class="facilities-text">Personal Free WIFI</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 facilities-column">
+                    <div class="card fact-card">
+                        <div class="card-footer">
+                            <img class="security-image" src="facility-img/security.png">
+                            <p class="facilities-text">Sufficient security</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 facilities-column">
+                    <div class="card fact-card">
+                        <div class="card-footer">
+                            <img class="phone-image" src="facility-img/phone.png">
+                            <p class="facilities-text">Responsive phone answering service</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 facilities-column">
+                    <div class="card fact-card">
+                        <div class="card-footer">
+                            <img class="food-image" src="facility-img/food.png">
+                            <p class="facilities-text">Simple and delicious food</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--gallery-->
+
+        <section id="gallery">
+
+
+            <div class="row">
+                <div class="col-lg-6 gallery-big-column1">
+                    <div class="gallery-heading1">
+                        <h2 class="gallery-head1">GALLERY</h2>
+                        <hr class="gallery-line">
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12 gallery-column1">
+                            <img class="gallery1-image" src="gallery-img/gallery1.jpg">
+                            <img class="gallery2-image" src="gallery-img/gallery2.jpg">
+                            <img class="gallery3-image" src="gallery-img/gallery3.jpg">
+                            <img class="gallery4-image" src="gallery-img/gallery4.jpg">
+                        </div>
+
+                        <div class="col-lg-12 gallery-column2">
+                            <img class="gallery5-image" src="gallery-img/gallery5.png">
+                            <img class="gallery6-image" src="gallery-img/gallery6.jpeg">
+                            <img class="gallery7-image" src="gallery-img/gallery7.jpg">
+                            <img class="gallery8-image" src="gallery-img/gallery8.webp">
+                        </div>
+
+                        <div class="col-lg-12 gallery-column3">
+                            <img class="gallery9-image" src="gallery-img/gallery9.jpg">
+                            <img class="gallery10-image" src="gallery-img/gallery10.jpg">
+                            <img class="gallery11-image" src="gallery-img/gallery11.jpg">
+                            <img class="gallery12-image" src="gallery-img/gallery12.jpg">
+                        </div>
+
+                        <div class="col-lg-12 gallery-column4">
+                            <img class="gallery13-image" src="gallery-img/gallery13.jpg">
+                            <img class="gallery14-image" src="gallery-img/gallery14.jpg">
+                            <img class="gallery15-image" src="gallery-img/gallery15.jpg">
+                            <img class="gallery16-image" src="gallery-img/gallery16.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 gallery-big-column">
+                    <div class="gallery-heading2">
+                        <h2 class="gallery-head1">PEOPLE WHO HAVE VISITED</h2>
+                        <hr class="testimonial-line">
+                    </div>
+                    <div class="card testimonial-card">
+                        <div class="card-body testimonial-body">
+                            <img class="" src="">
+                            <p class="testimonial-text">"Facilities are good, I enjoyed my Stay there and very lovely
+                                Hotel."</p>
+                            <h6 class="heading5">Mr. Suresh Kanjhiwala (Review: ⭐⭐⭐⭐⭐)</h6>
+
+                        </div>
+                        <div class="card testimonial-card">
+                            <div class="card-body testimonial-body">
+                                <img class="" src="">
+                                <p class="testimonial-text">"Just Stayed for two days, loved the Responsive service and
+                                    staff was also very
+                                    Good."</p>
+                                <h6 class="heading5">Mrs. Sunita Singh (Review: ⭐⭐⭐⭐)</h6>
+                            </div>
+                        </div>
+                        <div class="card testimonial-card">
+                            <div class="card-body testimonial-body">
+                                <img class="" src="">
+                                <P class="testimonial-text">"I think this is the best hotel I have Visited in a long
+                                    time, very good services."
+                                </P>
+                                <h6 class="heading5">Mr. Mahendra Sarkar (Review: ⭐⭐⭐⭐⭐)</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!--contact us-->
+        <section id="contact">
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <h2 class="contact-heading">Address</h2>
+                    <p class="contact-text">Krishna Road, north-zone 2, safiabad road, hareli, Delhi-110023</p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="fas fa-phone contact-icon"></i>
+                    <h2 class="contact-heading">Phone</h2>
+                    <p class="contact-text">+91-9428482456, +91-9823532435</p>
+                    <P class="contact-text"></P>
+                    <P class="contact-text">+91-6353298249</P>
+                </div>
+                <div class="col-lg-4">
+                    <i class="far fa-envelope contact-icon"></i>
+                    <h2 class="contact-heading">Gmail</h2>
+                    <p class="contact-text">antrashotel809@gmail.com</p>
+                </div>
+
+        </section>
+
+
+
+</body>
+
+</html>
